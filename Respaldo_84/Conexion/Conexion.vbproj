@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F067A366-E8B6-403A-8B15-F84DCF3D9F1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Conexion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Conexion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Conexion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imagen.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="biblioteca.Designer.vb">
+      <DependentUpon>biblioteca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="biblioteca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorreoDecana.vb" />
+    <Compile Include="Exportar.vb" />
+    <Compile Include="circular.Designer.vb">
+      <DependentUpon>circular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="circular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="decanato.Designer.vb">
+      <DependentUpon>decanato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="decanato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memorandum.Designer.vb">
+      <DependentUpon>memorandum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="memorandum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oficiodecanato.Designer.vb">
+      <DependentUpon>oficiodecanato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="oficiodecanato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oficioquipux.Designer.vb">
+      <DependentUpon>oficioquipux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="oficioquipux.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seguridad.Designer.vb">
+      <DependentUpon>seguridad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="seguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniciosesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniciosesion.Designer.vb">
+      <DependentUpon>iniciosesion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administracion.Designer.vb">
+      <DependentUpon>administracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="administracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="papelera.Designer.vb">
+      <DependentUpon>papelera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="papelera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuprincipal.Designer.vb">
+      <DependentUpon>menuprincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MySqlCommand.vb" />
+    <Compile Include="secretaria.Designer.vb">
+      <DependentUpon>secretaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="secretaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="biblioteca.resx">
+      <DependentUpon>biblioteca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="circular.resx">
+      <DependentUpon>circular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="decanato.resx">
+      <DependentUpon>decanato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memorandum.resx">
+      <DependentUpon>memorandum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oficiodecanato.resx">
+      <DependentUpon>oficiodecanato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oficioquipux.resx">
+      <DependentUpon>oficioquipux.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seguridad.resx">
+      <DependentUpon>seguridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iniciosesion.resx">
+      <DependentUpon>iniciosesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administracion.resx">
+      <DependentUpon>administracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="papelera.resx">
+      <DependentUpon>papelera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuprincipal.resx">
+      <DependentUpon>menuprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="secretaria.resx">
+      <DependentUpon>secretaria.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25706.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86834.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papeleria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMINISTRACION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SECRETARIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BIBLIOTECA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BARRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UUU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagen.ico" />
+    <None Include="Resources\seguridadsisis.png" />
+    <None Include="Resources\iniicosi.png" />
+    <None Include="Resources\seguridad si.png" />
+    <None Include="Resources\iniciosi.png" />
+    <None Include="Resources\111.png" />
+    <None Include="Resources\formularios4.png" />
+    <None Include="Resources\formularios3.png" />
+    <None Include="Resources\formularios2.png" />
+    <None Include="Resources\formularios1.png" />
+    <None Include="Resources\formularios.png" />
+    <None Include="Resources\registro1.png" />
+    <None Include="Resources\MENU1.png" />
+    <None Include="Resources\MENU.png" />
+    <None Include="Resources\inicio.png" />
+    <None Include="Resources\registro.png" />
+    <None Include="Resources\OO.png" />
+    <None Include="Resources\YYY1.png" />
+    <None Include="Resources\YYY.png" />
+    <None Include="Resources\FFF.png" />
+    <None Include="Resources\444.png" />
+    <None Include="Resources\257061.png" />
+    <None Include="Resources\60961.png" />
+    <None Include="Resources\AAAA.png" />
+    <None Include="Resources\CASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
